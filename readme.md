@@ -20,3 +20,9 @@ There are many reasons why we'd want this. For instance, it could help a colourb
 
 ## Help?
 There's a lot that can be done in this repository, and most if it is pretty easy. Creating a translation to a human language or a scripting language is probably done in a few minutes. Updating the exact boundaries between the different colours might be a bit trickier, but help is very much appreciated.
+
+## Thanks
+Thanks to everybody who contributed:
+
+- [Gustavo Ferreira](https://github.com/gferreira)
+- [Eduardo Lopes](https://github.com/EduardoLopes)
