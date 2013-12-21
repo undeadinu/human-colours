@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random background color</title>
+        <style>
+
+        body{
+            background: hsl(0, 100%, 100%);
+        }
+
+        div{
+            background: rgba(255,255,255,0.5);
+            text-align: center;
+        }
+
+        #colorName{
+            font-size: 2em;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+
+            <h1 id="colorName"></h1>
+            <span>Click to change the color</span>
+
+        </div>
+
+        <script src="../human-colours.js"></script>
+        <script>
+            var hls,
+                translation,
+                h, //Hue
+                s, //Saturation
+                l; //Lightness
+
+            function random( min, max ) {
+                return Math.floor(Math.random() * ( max - min ) + min);
+            }
+
+            function changeBodyBackground(){
+                h = random(0, 360);
+                s = random(0, 100);
+                l = random(0, 100);
+                hsl = 'hsl('+ h +', '+ s +'%, '+ l +'%)';
+
+                document.body.style.backgroundColor = hsl;
+
+                translation = new HumanColours( hsl );
+
+                document.getElementById('colorName').innerHTML = 'A ' + translation.hueName() +', '+translation.saturationName()+', '+translation.lightnessName() + ' background';
+            }
+
+            changeBodyBackground();
+
+            document.addEventListener('click', function() {
+
+                changeBodyBackground();
+
+            });
+
+        </script>
+    </body>
+</html>
