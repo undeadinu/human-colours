@@ -3,7 +3,10 @@
   var regex = /hsl\((.*)\)/, //Match hsl values
       h, //Hue
       s, //Saturation
-      l; //Lightness
+      l, //Lightness
+      hue,
+      sat,
+      light;
 
   function HumanColours(hsl){
     this.HSL = hsl;
@@ -64,11 +67,11 @@
 
     if( l < 10 ) { light = 'almost black'; }
     if( l > 9 ) { light = 'very dark'; }
-    if( l > 22 ) { light = 'dark '; }
+    if( l > 22 ) { light = 'dark'; }
     if( l > 30 ) { light = 'normal?'; }
-    if( l > 60 ) { light = 'light '; }
-    if( l > 80 ) { light = 'very light '; }
-    if( l > 94 ) { light = 'almost white, '; }
+    if( l > 60 ) { light = 'light'; }
+    if( l > 80 ) { light = 'very light'; }
+    if( l > 94 ) { light = 'almost white'; }
 
     return light;
   };

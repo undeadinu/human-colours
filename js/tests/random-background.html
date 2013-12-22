@@ -8,6 +8,7 @@
 
         body{
             background: hsl(0, 100%, 100%);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
 
         div{
@@ -36,7 +37,8 @@
                 translation,
                 h, //Hue
                 s, //Saturation
-                l; //Lightness
+                l, //Lightness
+                article;
 
             function random( min, max ) {
                 return Math.floor(Math.random() * ( max - min ) + min);
@@ -52,16 +54,21 @@
 
                 translation = new HumanColours( hsl );
 
-                document.getElementById('colorName').innerHTML = 'A ' + translation.hueName() +', '+translation.saturationName()+', '+translation.lightnessName() + ' background';
+                switch (translation.hueName()[0].toLowerCase()) {
+                    case 'a': article = 'An'; break;
+                    case 'e': article = 'An'; break;
+                    case 'i': article = 'An'; break;
+                    case 'o': article = 'An'; break;
+                    case 'u': article = 'An'; break;
+                    default: article = 'A';
+                }
+
+                document.getElementById('colorName').innerHTML = article +' ' + translation.hueName() +', '+translation.saturationName()+', '+translation.lightnessName() + ' background';
             }
 
             changeBodyBackground();
 
-            document.addEventListener('click', function() {
-
-                changeBodyBackground();
-
-            });
+            document.onclick = changeBodyBackground;
 
         </script>
     </body>
