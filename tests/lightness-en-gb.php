@@ -18,7 +18,7 @@ function hueName($h) {
 	return $hue;
 }
 function saturationName($s) {
-	if($s < 10) { $sat =  'almost hueless'; }
+	if($s < 10) { $sat =  'almost grey'; }
 	if($s > 9) { $sat =  ' very unsaturated'; }
 	if($s > 30) { $sat =  'unsaturated'; }
 	if($s > 60) { $sat =  'rather saturated'; }

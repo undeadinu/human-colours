@@ -18,7 +18,7 @@ function hueName($h) {
 	return $hue;
 }
 function saturationName($s) {
-	if($s < 10) { $sat =  ' bijna kleurloos'; }
+	if($s < 10) { $sat =  ' bijna grijs'; }
 	if($s > 9) { $sat =  ' erg onverzadigd'; }
 	if($s > 30) { $sat =  ' onverzadigd'; }
 	if($s > 60) { $sat =  ' flink verzadigd'; }
@@ -44,7 +44,7 @@ function returnColor($h,$s,$l) {
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Een willekeurig gekleurdeachtergrond</title>
+<title>Een willekeurig gekleurde achtergrond</title>
 <style>
 body {
 	font: 120%/1.5 georgia, serif;

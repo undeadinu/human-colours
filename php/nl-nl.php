@@ -19,7 +19,7 @@ function hueName($h) {
 }
 /* saturation */
 function saturationName($s) {
-	if($s < 10) { $sat =  'bijna kleurloze'; }
+	if($s < 10) { $sat =  'bijna grijs'; }
 	if($s > 9) { $sat =  'erg onverzadigde'; }
 	if($s > 30) { $sat =  'onverzadigde'; }
 	if($s > 60) { $sat =  'flink verzadigde'; }
