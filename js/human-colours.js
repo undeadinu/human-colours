@@ -76,10 +76,6 @@
     return light;
   };
 
-  var humanColours = function( hsl ) {
-    return new HumanColours( hsl );
-  };
-
-  global.HumanColours = humanColours;
+  global.HumanColours = HumanColours;
 
 }(this));
