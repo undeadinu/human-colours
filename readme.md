@@ -26,3 +26,4 @@ Thanks to everybody who contributed:
 
 - [Gustavo Ferreira](https://github.com/gferreira)
 - [Eduardo Lopes](https://github.com/EduardoLopes)
+- [Lea Verou](https://github.com/LeaVerou/)
