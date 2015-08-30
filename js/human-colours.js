@@ -54,11 +54,14 @@
     saturationName: function() {
       s = this.getSaturation();
   
-      if( s < 10 ) { sat =  'almost grey'; }
-      if( s > 9 ) { sat =  ' very unsaturated'; }
-      if( s > 30 ) { sat =  'unsaturated'; }
-      if( s > 60 ) { sat =  'rather saturated'; }
-      if( s > 80 ) { sat =  'highly saturated'; }
+      if( s < 4) { sat =  'grey'; }
+      if( s > 3) { sat =  'almost grey'; }
+      if( s > 10) { sat =  'very unsaturated'; }
+      if( s > 30) { sat =  'unsaturated'; }
+      if( s > 46) { sat =  'rather unsaturated'; }
+      if( s > 60) { sat =  'saturated'; }
+      if( s > 80) { sat =  'rather saturated'; }
+      if( s > 90) { sat =  'very saturated'; }
   
       return sat;
     },
