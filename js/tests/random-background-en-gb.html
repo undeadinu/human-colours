@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Random background color</title>
+        <style>
+
+        body{
+            background: hsl(0, 100%, 100%);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        div{
+            background: rgba(255,255,255,0.5);
+            text-align: center;
+        }
+
+        #colorName{
+            font-size: 2em;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+
+            <h1 id="colorName"></h1>
+            <span>Click or Touch to  change the color</span>
+
+        </div>
+
+        <script src="../human-colours-en-gb.js"></script>
+        <script>
+            var hls,
+                translation,
+                h, //Hue
+                s, //Saturation
+                l, //Lightness
+                article;
+
+            function random( min, max ) {
+                return Math.floor(Math.random() * ( max - min ) + min);
+            }
+
+            function changeBodyBackground(){
+                h = random(0, 360);
+                s = random(0, 100);
+                l = random(0, 100);
+                hsl = 'hsl('+ h +', '+ s +'%, '+ l +'%)';
+
+                document.body.style.backgroundColor = hsl;
+
+                translation = new HumanColours( hsl );
+
+                switch (translation.hueName()[0].toLowerCase()) {
+                    case 'a': article = 'An'; break;
+                    case 'e': article = 'An'; break;
+                    case 'i': article = 'An'; break;
+                    case 'o': article = 'An'; break;
+                    case 'u': article = 'An'; break;
+                    default: article = 'A';
+                }
+
+                document.getElementById('colorName').innerHTML = article +' ' + translation.hueName() +', '+translation.saturationName()+', '+translation.lightnessName() + ' background';
+            }
+
+            changeBodyBackground();
+
+            document.onclick = changeBodyBackground;
+
+        </script>
+    </body>
+</html>

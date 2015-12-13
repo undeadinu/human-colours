@@ -69,27 +69,15 @@ div {
 <p>In this next table you'll see the value of the hue, and the human name behind it. If you know a better layout for such a table, please let me know. </p>
 <p>We're looking for the correct names here <em>and</em> for the correct boundaries: does green really end at 163? If you know of a scientific approach, please let me know.</p>
 <?php
-
-
 $h1 = rand(0,360);
 $s1 = rand(0,100);
 $l1 = rand(0,100);
 $colour1 = hueName($h1);
 $saturation1 = saturationName($s1);
 $lightness1 = lightnessName($l1);
-
 $i = 0;
-
 while ( $i < 360 ) {
 	echo '<div style="background: hsl('.$i.', 100%, 50%)">'.$i.' = '.hueName($i).'</div>';
 	$i++;
 }
-
 ?>
-
-
-
-
-
-
-

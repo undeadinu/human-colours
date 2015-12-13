@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Random background color</title>
+        <title>Color de fondo aleatorio</title>
         <style>
 
         body{
@@ -27,11 +27,11 @@
         <div>
 
             <h1 id="colorName"></h1>
-            <span>Click or Touch to  change the color</span>
+            <span>Haz click o Toca para cambiar el color</span>
 
         </div>
 
-        <script src="../human-colours.js"></script>
+        <script src="../human-colours-es-sp.js"></script>
         <script>
             var hls,
                 translation,
@@ -55,12 +55,7 @@
                 translation = new HumanColours( hsl );
 
                 switch (translation.hueName()[0].toLowerCase()) {
-                    case 'a': article = 'An'; break;
-                    case 'e': article = 'An'; break;
-                    case 'i': article = 'An'; break;
-                    case 'o': article = 'An'; break;
-                    case 'u': article = 'An'; break;
-                    default: article = 'A';
+                    default: article = 'Un';
                 }
 
                 document.getElementById('colorName').innerHTML = article +' ' + translation.hueName() +', '+translation.saturationName()+', '+translation.lightnessName() + ' background';
