@@ -25,7 +25,11 @@
     getSaturation: function() {
       return this.values[1].replace('%', '');
     },
+<<<<<<< d4c9c11acf78fe447d790f62ce762f74b67b077b
   
+=======
+    
+>>>>>>> Update human-colours-en-gb.js
     getLightness: function() {
       return this.values[2].replace('%', '');
     },
@@ -46,14 +50,23 @@
       if ( h > 270 ) { hue = 'purple'; }
       if ( h > 291 ) { hue = 'magenta'; }
       if ( h > 327 ) { hue = 'rose'; }
+<<<<<<< d4c9c11acf78fe447d790f62ce762f74b67b077b
       if ( h > 344 ) { hue = 'red'; }
   
+=======
+     if ( h > 344 ) { hue = 'red'; }
+ 
+>>>>>>> Update human-colours-en-gb.js
       return hue;
     },
     
     saturationName: function() {
       s = this.getSaturation();
+<<<<<<< d4c9c11acf78fe447d790f62ce762f74b67b077b
   
+=======
+      
+>>>>>>> Update human-colours-en-gb.js
       if( s < 4) { sat =  'grey'; }
       if( s > 3) { sat =  'almost grey'; }
       if( s > 10) { sat =  'very unsaturated'; }
@@ -62,7 +75,11 @@
       if( s > 60) { sat =  'saturated'; }
       if( s > 80) { sat =  'rather saturated'; }
       if( s > 90) { sat =  'very saturated'; }
+<<<<<<< d4c9c11acf78fe447d790f62ce762f74b67b077b
   
+=======
+      
+>>>>>>> Update human-colours-en-gb.js
       return sat;
     },
     
@@ -79,8 +96,11 @@
   
       return light;
     }
+<<<<<<< d4c9c11acf78fe447d790f62ce762f74b67b077b
   };
 
   global.HumanColours = HumanColours;
 
 }(this));
+=======
+>>>>>>> Update human-colours-en-gb.js
