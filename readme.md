@@ -1,4 +1,4 @@
-#Human readable colours
+# Human readable colours
 
 How do you describe a colour? Some colours are easy. It might be clear that something is red, blue or yellow. But what do you call something between green and yellow? When is it green? When is it yellow? And how about saturation? When would you call something gray, and when can we say it has a hue? The same with darkness and lightness: There is a point when a color is perceived as white or black. 
 
