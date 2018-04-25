@@ -29,3 +29,4 @@ Thanks to everybody who contributed:
 - [Lea Verou](https://github.com/LeaVerou/)
 - [Jörg Bartels](https://github.com/nifl)
 - [Andrés Cidoncha Carballo](https://github.com/AndresCidoncha)
+- [Julien Bidoret](https://github.com/jbidoret)
